@@ -1,0 +1,6 @@
+.pytest_cache/
+autoReports/
+.idea
+__pycache__/
+venv/
+test.log
