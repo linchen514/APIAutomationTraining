@@ -12,19 +12,22 @@ class Test_inc:
     def test_business_zore(self):
         assert inc(0) == 1
 
+    @pytest.mark.inc
     @pytest.mark.functiontest
     def test_business_positive(self):
         assert inc(9) == 10
 
+    @pytest.mark.inc
     @pytest.mark.functiontest
     def test_business_negative(self):
         assert inc(-1) == 0
 
+    @pytest.mark.inc
     @pytest.mark.functiontest
     def test_business_bignumber(self):
         assert inc(999999999) == 1000000000
 
-    @pytest.mark.functiontest
+    @pytest.mark.inc
     @pytest.mark.illegalinputtest
     @pytest.mark.xfail(raises=TypeError, reason="illegal input")
     def test_business_illegalinput(self):
