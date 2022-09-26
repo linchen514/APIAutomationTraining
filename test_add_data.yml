@@ -1,0 +1,11 @@
+businessTests:
+  - casename: 'test zore add zore'
+    testdata: [0,0,0]
+  - casename: 'test positive add positive'
+    testdata: [1,9,10]
+  - casename: 'test negative add negative'
+    testdata: [-1,-9,-10]
+  - casename: 'test bignumber add bignumber'
+    testdata: [999999999,1000000000,1999999999]
+  - casename: 'test possitive add negative'
+    testdata: [10,-80,-70]
